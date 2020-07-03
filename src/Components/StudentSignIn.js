@@ -8,13 +8,10 @@ import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
 import Paper from "@material-ui/core/Paper";
 import AccountCircle from "@material-ui/icons/AccountCircle";
-import Input from "@material-ui/core/Input";
-import InputLabel from "@material-ui/core/InputLabel";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import FormControl from "@material-ui/core/FormControl";
 import LockIcon from "@material-ui/icons/Lock";
 import MenuItem from "@material-ui/core/MenuItem";
-import FormHelperText from "@material-ui/core/FormHelperText";
 import Select from "@material-ui/core/Select";
 import Button from "@material-ui/core/Button";
 
@@ -48,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 auto",
   },
   textfield: {
-    width: "85%",
+    width: "88%",
     height: 10,
     margin: "0 auto",
     marginBottom: 40,
@@ -75,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#265a88",
         fontSize: 12,
         fontWeight: 400,
-    }
+    }, 
 }));
 
 const theme = createMuiTheme({
@@ -132,6 +129,7 @@ export default function StudentSignIn() {
             <TextField
               className={classes.textfield}
               id="input-with-icon-textfield"
+              variant="outlined"
               //   label="TextField"
               InputProps={{
                 startAdornment: (
@@ -148,6 +146,7 @@ export default function StudentSignIn() {
             <TextField
               className={classes.textfield}
               id="input-with-icon-textfield"
+              variant="outlined"
               //   label="TextField"
               type="password"
               InputProps={{
