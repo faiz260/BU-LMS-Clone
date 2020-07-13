@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     height: 35,
-    width: 120,
+    width: 122,
     borderRadius: 4,
     backgroundColor: "#fff",
     fontSize: 12,
